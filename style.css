@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Braah+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-image: url('./school website/schoolfont.jpg');
+  background-position: center;
+  background-size: cover;
+  backdrop-filter: blur(2px);
+  background-color: #5a4c4cbd;
+  background-repeat: no-repeat;
+  background-blend-mode: multiply;
+  /* backdrop-filter: brightness(70%); */
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  height: 70px;
+  width: 100vw;
+  /* background: rgb(65 44 44 / 46%); */
+  background: #00000075;
+  border-radius: 5px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(9.8px);
+  -webkit-backdrop-filter: blur(9.8px);
+  /* backdrop-filter: blur(20px); */
+  /* background-color: #969688; */
+  /* From https://css.glass */
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+#logo {
+  margin-left: 40px;
+  width: 70px;
+  height: 70px;
+  margin-top: auto;
+  margin-bottom: auto;
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px;
+}
+
+#logo:hover {
+  cursor: pointer;
+}
+
+nav ul li {
+  margin: auto 26px;
+}
+
+nav ul li a {
+  color: #f6eeee;
+  font-size: 15px;
+  font-family: 'Braah One', sans-serif;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: #1eebeb;
+}
+
+.content {
+  width: 55%;
+  height: 85vh;
+  display: flex;
+  align-items: center;
+  padding-left: 42px;
+}
+
+h1 {
+  font-size: 47px;
+  /* font-family: 'Cedarville Cursive', cursive; */
+  font-family: 'Braah One', sans-serif;
+  color: white;
+}
+
+#sec_h1 {
+  color: #d6d60a;
+}
+
+h2 {
+  font-family: 'Caveat', cursive;
+  font-size: 18px;
+  color: white;
+  margin: 0px 0px 50px 0px;
+}
+
+pre {
+  /* font-family: 'Kanit', sans-serif; */
+  font-size: 20px;
+  font-family: 'Kalam', cursive;
+  color: #ffffff;
+}
+
+.button {
+  color: black;
+  display: block;
+  width: 172px;
+  font-size: 19px;
+  padding: auto;
+  height: 50px;
+  margin-top: 25px;
+  background-color: #d6d60a;
+  border: none;
+  border-radius: 40px;
+  box-shadow: 0px 0px 34px;
+  transition: all 0.5s;
+  font-family: 'Kanit', sans-serif;
+  cursor: pointer;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+#Achievement {
+  display: inline-block;
+  position: absolute;
+  font-size: 15px;
+  font-family: 'Kanit', sans-serif;
+  top: 104px;
+  right: 55px;
+}
+
+h3:nth-child(even) {
+  color: white;
+}
+
+h3:nth-child(odd) {
+  color: #b7ff21;
+}
+
+.Ach_head {
+  color: burlywood;
+  text-decoration: underline;
+  font-family: 'Kanit', sans-serif;
+  font-size: 25px;
+  margin-bottom: 11px;
+}
+/* links */
+#links {
+  display: inline;
+  position: absolute;
+  bottom: 0px;
+  margin-left:40px;
+}
+#links a img{
+  width:28px;
+  margin: 0px 4px;
+}
+
+/* Apply the animation to the text */
+h1 {
+  animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.animate {
+  opacity: 0;
+  transform: translateX(100%);
+  animation: slide-in 1s ease-in-out forwards;
+}
+
+@keyframes slide-in {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+.animate:nth-child(1) {
+  animation-delay: 0.3s;
+}
+
+.animate:nth-child(2) {
+  animation-delay: 0.5s;
+}
+
+.animate:nth-child(3) {
+  animation-delay: 0.7s;
+}
+
+.animate:nth-child(4) {
+  animation-delay: 0.9s;
+}
+
+.animate:nth-child(5) {
+  animation-delay: 1s;
+}
