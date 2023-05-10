@@ -22,7 +22,6 @@ body {
   background-color: #5a4c4cbd;
   background-repeat: no-repeat;
   background-blend-mode: multiply;
-  /* backdrop-filter: brightness(70%); */
 }
 
 nav {
@@ -30,15 +29,11 @@ nav {
   justify-content: space-between;
   height: 70px;
   width: 100vw;
-  /* background: rgb(65 44 44 / 46%); */
   background: #00000075;
   border-radius: 5px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(9.8px);
   -webkit-backdrop-filter: blur(9.8px);
-  /* backdrop-filter: blur(20px); */
-  /* background-color: #969688; */
-  /* From https://css.glass */
 }
 
 nav ul {
@@ -69,6 +64,7 @@ nav ul li a {
   font-size: 15px;
   font-family: 'Braah One', sans-serif;
   text-decoration: none;
+  transition: 0.6s ease;
 }
 
 nav ul li a:hover {
@@ -85,7 +81,6 @@ nav ul li a:hover {
 
 h1 {
   font-size: 47px;
-  /* font-family: 'Cedarville Cursive', cursive; */
   font-family: 'Braah One', sans-serif;
   color: white;
 }
@@ -94,18 +89,29 @@ h1 {
   color: #d6d60a;
 }
 
-h2 {
+#sec_h2 {
   font-family: 'Caveat', cursive;
   font-size: 18px;
   color: white;
   margin: 0px 0px 50px 0px;
+  transition: transform 0.5s ease;
+}
+
+#sec_h2:hover {
+  cursor: pointer;
+  transform: scale(1.01);
 }
 
 pre {
-  /* font-family: 'Kanit', sans-serif; */
   font-size: 20px;
   font-family: 'Kalam', cursive;
   color: #ffffff;
+  transition: transform 0.8s ease;
+}
+
+pre:hover {
+  transform: scale(1.005);
+  cursor: pointer;
 }
 
 .button {
@@ -157,6 +163,11 @@ pre {
   font-family: 'Kanit', sans-serif;
   top: 104px;
   right: 55px;
+
+}
+
+h3 {
+  transition: font-size 0.8s ease;
 }
 
 h3:nth-child(even) {
@@ -167,6 +178,11 @@ h3:nth-child(odd) {
   color: #b7ff21;
 }
 
+h3:hover {
+  cursor: pointer;
+  font-size: 18px;
+}
+
 .Ach_head {
   color: burlywood;
   text-decoration: underline;
@@ -174,16 +190,24 @@ h3:nth-child(odd) {
   font-size: 25px;
   margin-bottom: 11px;
 }
+
 /* links */
-#links {
-  display: inline;
-  position: absolute;
-  bottom: 0px;
-  margin-left:40px;
+span.link {
+  display: inline-flex;
+  position: relative;
+  bottom: 41px;
+  left: 33px;
 }
-#links a img{
-  width:28px;
-  margin: 0px 4px;
+
+span.link img {
+  width: 20px;
+  margin: 0px 12px;
+  transition: transform 0.8s easein;
+}
+
+span.link img:hover {
+  transform: scale(1.2);
+  cursor: pointer;
 }
 
 /* Apply the animation to the text */
